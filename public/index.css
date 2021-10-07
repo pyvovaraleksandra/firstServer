@@ -1,0 +1,39 @@
+.nav-wrapper {
+    padding: 0 50px;
+}
+
+.course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course h1 {
+    margin-bottom: 20px;
+}
+
+.course img {
+    max-width: 300px;
+    height: auto;
+}
+
+.course .price.big {
+    font-size: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.edit-icon {
+    font-size: 10px !important;
+}
