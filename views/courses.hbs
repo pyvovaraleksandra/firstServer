@@ -5,8 +5,8 @@
     {{#each courses }}
         <div class="col s3">
             <div class="card">
-                <div class="card-image">
-                    <img src="{{img}}" alt="{{title}}">
+                <div class="card-image avatar">
+                    <img src="{{img}}" alt="{{title}}" class="avatar-img">
                 </div>
                 <div class="card-content">
                     <span class="card-title">{{title}}</span>
@@ -18,6 +18,13 @@
                         <i class="large material-icons mr-1 edit-icon">border_color</i>
                         Edit
                     </a>
+                    <form class="mt-2" action="/cart/add" method="POST">
+                        <button class="btn tn-primary w-100">
+                            <input type="hidden" name="id" value="{{id}}">
+                            <i class="large material-icons mr-1 edit-icon">add_shopping_cart</i>
+                            BUY COURSE
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

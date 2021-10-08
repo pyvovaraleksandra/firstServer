@@ -1,0 +1,34 @@
+<h1>
+    Cart
+</h1>
+
+{{#if courses.length}}
+    <div class="cart" id="cart">
+        <div class="head">
+            <div class="head-col">Name</div>
+            <div class="head-col">Count</div>
+            <div class="head-col"></div>
+        </div>
+        <div class="cart-body">
+            {{#each courses}}
+                <div class="head-row">
+                    <div class="row-col">{{title}}</div>
+                    <div class="row-col">{{count}}</div>
+                    <div class="row-col text-right">
+                        <button class="btn btn-small js-remove" data-id="{{id}}">
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="total">
+            TOTAL: <span class="total-price">{{price}}</span>
+        </div>
+    </div>
+{{else}}
+    <div>
+        Cart is empty.
+        Want to buy smth? Go to  <a href="/courses">courses</a>
+    </div>
+{{/if}}
